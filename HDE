@@ -1,0 +1,31 @@
+i=0
+input1=[9,6,-53,32,16]
+
+def Addition(N,Sum,x,s,inner):
+    global i
+    while N<=100:
+
+
+      if i < len(inner) :
+        x = inner[i]
+        i=i+1
+
+      if x <= 100 and x>0:
+          s=x**2
+
+      if x>=-100 and x <=0:
+          s=0
+
+      if N==len(inner):
+
+          print("The Output Is : ",Sum)
+          i=0
+      N=N+1
+      Sum+=s
+
+      x=0
+      s=0
+print("The Input Is :", input1)
+Addition(0,0,0,0,input1)
+
+
